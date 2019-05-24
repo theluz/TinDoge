@@ -4,10 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>TinDoge</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu&display=swap" rel="stylesheet">
-  
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css"> <!--link abaixo do bootstrap para overwrite no container-fluid.-->
+
+  <!--Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -17,6 +25,7 @@
 <body>
 
   <section id="title">
+  <div class="container-fluid">
 
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -47,17 +56,17 @@
     <div class="row">
       <div class="col-lg-6">
         <h1>Meet new and interesting doges nearby.</h1>
-        <button type="button">Download</button>
-        <button type="button">Download</button>
+        <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
       </div>
 
       <div class="col-lg-6">
-        <img src="images/iphone6.png" alt="iphone-mockup">
+        <img class="title-image" src="images/dogephone.png" alt="iphone-mockup">
       </div>
 
     </div>
 
-
+  </div>
   </section>
 
 
@@ -65,14 +74,23 @@
 
   <section id="features">
 
-    <h3>Easy to use.</h3>
-    <p>So easy to use, even your doge could do it.</p>
-
-    <h3>Elite Clientele</h3>
-    <p>We have all the doges, the greatest dogs.</p>
-
-    <h3>Guaranteed to work.</h3>
-    <p>Find the love of your doge's life or your money back.</p>
+  <div class="row">
+    <div class="feature-box col-lg-4">
+      <i class="icon fas fa-check-circle fa-4x"></i>
+      <h3>Easy to use.</h3>
+      <p>So easy to use, even your doge could do it.</p>
+    </div>
+    <div class="feature-box col-lg-4">
+      <i class="icon fas fa-bullseye fa-4x"></i>
+      <h3>Elite Clientele</h3>
+      <p>We have all the doges, the greatest dogs.</p>
+    </div>
+    <div class="feature-box col-lg-4">
+      <i class="icon fas fa-heart fa-4x"></i>
+      <h3>Guaranteed to work.</h3>
+      <p>Find the love of your doge's life or your money back.</p>
+    </div>
+  </div>
 
   </section>
 
