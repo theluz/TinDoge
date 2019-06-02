@@ -1,10 +1,20 @@
 #title {
-  background-color: #edd601;
   text-align: left;
 }
 
 .container-fluid {
   padding: 3% 15% 15%;
+
+}
+
+/* Sections */
+.colored-section {
+  background-color: #edd601;
+
+}
+
+.white-section {
+  background-color: #fff;
 }
 
 body h1, h2, h3, h4, h5, h6 {
@@ -78,7 +88,6 @@ body {
 /* Features Section */
 #features {
   padding: 7% 15%;
-  background-color: #fff;
   position:relative;
 }
 
@@ -102,7 +111,7 @@ body {
 /* Testemonials Section */
 #testimonials{
   background-color: #fdd740;
-  color: #fff;
+
 }
 
 .testimonal-text {
@@ -146,12 +155,6 @@ body {
 }
 
 /* Call to Action */
-
-#cta {
-  background-color: #edd601;
-  color: #fff;
-  padding: 7% 15%;
-}
 
 
 /* Footer section */
